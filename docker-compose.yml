@@ -1,0 +1,12 @@
+version: '2.19.1'
+services:
+  thienphuc:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    network_mode: myvps
+    ports:
+      - 5500:5500
+    expose:
+      - 5500
+    restart: always
